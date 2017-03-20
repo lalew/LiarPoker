@@ -7,13 +7,13 @@ Here's a wikipedia article about it. [Commune/Liar Poker](https://en.wikipedia.o
 There is a provided examples file with some possible hand calls. You may put your own hand calls to determine the probability.
 
 Calculate the probability of 5 of a kind, with 20 cards in play, using 20000 simulated rounds:
-```matlab
+```Matlab
 [prob, std] = LiarPoker(@(hand) OfAKind(hand,5),20,20000)
 ```
 The OfAKind function assumes that it's 5 of a kind aces, but that should be irrelevant.
 
 Calculate the probability of a 8 card straight with 15 cards in play, using 5000 simulated rounds:
-```matlab
+```Matlab
 [prob, std] = LiarPoker(@(hand) straight(hand,8),15,5000)
 ```
 
