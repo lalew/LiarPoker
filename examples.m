@@ -10,9 +10,7 @@ clear all; close all; clc; format compact;
 %   using 5000 simulated rounds:
 [prob, std] = LiarPoker(@(hand) straight(hand,8),15,5000)
 
-
-%%
-%Same as above, but specifying a convergence criteria of 1% instead of 
+%% Same as above, but specifying a convergence criteria of 1% instead of 
 %   a number of simulations:
 prob = LiarPokerConv(@(hand) OfAKind(hand,5),20,0.01)
 prob = LiarPokerConv(@(hand) straight(hand,8),15,0.01)

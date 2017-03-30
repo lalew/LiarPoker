@@ -8,7 +8,7 @@ function [prob, std] = LiarPoker(cfun, n, I,deck)
 %   n - Number of cards in play.  (Optional, default value = 10)
 %   I - Number of rounds to play.  (Optional, default value = 100000)
 %   deck - Optional, default value is imported from deck.mat, which should 
-%       be saved in the same folder.  deck is a 32x1 cell array of 
+%       be saved in the same folder.  deck is a 52x1 cell array of 
 %       structures.  Each structure has two keys, num and suit, which
 %       give the number value (J = 11, Q = 12, K = 13) and suit of the
 %       card (d = diamond, c = clubs, h = hearts, s = spades)
@@ -47,7 +47,7 @@ if nargin <4
     end
 end
 
-%
+% Integer and bounds check
 if n ~= ceil(n) || n < 1 || n > 52
     disp('n must be an integer between 1 and 52');
     return;

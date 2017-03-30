@@ -13,7 +13,8 @@ if nargin < 3
 end
 
 if n > 12 || n < 0
-    disp('gtfo and use a different function');
+    disp('n-arg Straight card hands must be non-negative and below 13');
+    disp('Try using straight(hand,n,1) which removes a wild card');
     numLeft = NaN;
     return;
 end

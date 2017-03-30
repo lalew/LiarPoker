@@ -8,7 +8,7 @@ function [prob, std] = LiarPokerConv(cfun, n, eps,deck)
 %   n - Number of cards in play.  (Optional, default value = 10)
 %   eps - Convergence criteria.  (Optional, default = 1% of prob)
 %   deck - Optional, default value is imported from deck.mat, which should 
-%       be saved in the same folder.  deck is a 32x1 cell array of 
+%       be saved in the same folder.  deck is a 52x1 cell array of 
 %       structures.  Each structure has two keys, num and suit, which
 %       give the number value (J = 11, Q = 12, K = 13) and suit of the
 %       card (d = diamond, c = clubs, h = hearts, s = spades)

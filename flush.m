@@ -9,7 +9,7 @@ function numLeft = flush(hand,n,wilds_removed)
 %   wilds_removed = 1.
 
 if n < 1 || n > 16
-    error('f off noob');
+    error('Flush parameters incorrect');
     numLeft = NaN;
     return;
 end
